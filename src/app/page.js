@@ -1,6 +1,7 @@
-//import Image from "public/asset/image.jpg";
+"use client"
 import '/src/css/style.css';
-
+import { TypeAnimation } from 'react-type-animation';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -9,8 +10,26 @@ export default function Home() {
     <main className='bg-black min-h-screen overflow-y-hidden'>
       <div className='grid grid-cols-1 lg:grid-cols-12'>
         <div className='col-span-7'>
-          <h1 className='text-white ml-6 mb-4 text-xl lg:text-6xl font-extrabold mt-10'>
-            Hello, I'm Benjamin
+          <h1 className='ml-6 mb-4 sm:text-lg lg:text-12xl font-extrabold mt-5 text-transparent bg-clip-text bg-gradient-to-r from-[#9bf8f4] to-[#6f7bf7]'>
+            Hello, I am Benjamin,<br/>
+    <TypeAnimation
+      sequence={[
+        'A Computer Science student',
+        500,
+        'Interested in Backend developement',
+        500,
+        ' Interested in CyberSecurity',
+        500,
+        ' Interested in Hardware',
+        500,
+        'Interested in Drone Piloting',
+        500
+      ]}
+      wrapper="span"
+      speed={50}
+      style={{ fontSize: 'sm:1rem', display: 'inline-block' }}
+      repeat={Infinity}
+    />
           </h1>
         </div>
       </div>
@@ -25,7 +44,7 @@ export default function Home() {
         </div>
 
         <div className='absolute transform -translate-x-1/2 -translate-y-1/2 top-96 left-2/4 mt-32'>
-        <button className='bg-gradient-to-br from-[#9bf8f4] to-[#6f7bf7] w-72 h-16 rounded-md text-white text-xl font-extrabold'>More about me</button>
+       <Link href='asset/temp.html'> <button className='bg-gradient-to-br from-[#9bf8f4] to-[#6f7bf7] lg:w-72 lg:h-16 sm:w-40 sm:h-10 rounded-md text-white lg:text-xl sm:text-lg font-extrabold'>More about me</button></Link>
       </div>
       </div>
 
