@@ -1,16 +1,27 @@
 export default function AboutMe(){
     return(
         <div className="text-white relative transform -translate-x-1/2 -translate-y-20 top-96 left-1/2 bg-black">
-            <section className="w-55 flex">
-
-            <img src="asset/programmer1.jpg" alt="programmer" width="480" className="inline-block"/>
-            <div className="pl-5">
-                <h1 className="inline-block">About Me</h1>
-                <p className="w-65">I am a computer Science student based in the UK. I passion for anything involving tech and research.
-                    Currently, focusing on BackEnd development, cybersecurity, hardware knowledge and computer vision.
-                </p>
+            <h1 className="pb-5 text-center">Tech Stack</h1>
+            <div className="flex justify-center">
+                    <div>
+                    <img src="/asset/html.png" alt="html" width="64" className="p-5 lg:w-32"/>
+                    </div>
+                    <div>
+                    <img src="/asset/css-3.png" alt="css" width="64" className="p-5 lg:w-32"/>
+                    </div>
+                    <div>
+                    <img src="/asset/js.png" alt="js" width="64" className="p-5 lg:w-32"/>
+                    </div>
+                    <div>
+                    <img src="/asset/react.png" alt="js" width="64" className="p-5 lg:w-32"/>
+                    </div>
+                    <div>
+                    <img src="/asset/python.png" alt="js" width="64" className="p-5 lg:w-32"/>
+                    </div>
+                    <div>
+                    <img src="/asset/c-.png" alt="js" width="64" className="p-5 lg:w-32"/>
+                    </div>
             </div>
-            </section>
         </div>
     )
 }
